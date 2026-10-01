@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.app {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px 16px 48px;
+}
+
+.app h1 {
+  margin: 0 0 20px;
+  font-size: 1.8rem;
+}
+
+input[type='text'] {
+  padding: 10px 12px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  background: #1e293b;
+  color: #e2e8f0;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background: #6366f1;
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4f46e5;
+}
+
+button.secondary {
+  background: #334155;
+}
+
+button.secondary:hover {
+  background: #475569;
+}
+
+button.danger {
+  background: transparent;
+  color: #f87171;
+}
+
+button.danger:hover {
+  background: rgba(248, 113, 113, 0.12);
+}
+
+.add-task {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.add-task input {
+  flex: 1 1 240px;
+}
+
+.form-error {
+  width: 100%;
+  margin: 0;
+  color: #f87171;
+  font-size: 0.9rem;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filter-button {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #cbd5e1;
+}
+
+.filter-button:hover {
+  background: #334155;
+}
+
+.filter-button.active {
+  background: #6366f1;
+  border-color: #6366f1;
+  color: #fff;
+}
+
+.tasks {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.task {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+.task input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+  accent-color: #22c55e;
+  cursor: pointer;
+}
+
+.task-description {
+  flex: 1;
+  word-break: break-word;
+}
+
+.task-done .task-description {
+  color: #64748b;
+  text-decoration: line-through;
+}
+
+.task-edit {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.task-edit input {
+  flex: 1 1 180px;
+}
+
+.empty-message {
+  padding: 24px 0;
+  color: #94a3b8;
+  text-align: center;
+}
